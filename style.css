@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  /* font-family */
+  --main-ff: Inter, sans-serif, -apple-system, BlinkMacSystemFont,
+    "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  /* colors */
+  --cart-bg-color: #f3f1ee;
+  --body-bg-color: #fff;
+  --btn-bg-color: #000000;
+  --btn-second-bg-color: #50eda1;
+  --paypal-bg-color: #ffd403;
+  --twitter-bg-color: #01aced;
+  --facebook-bg-color: #3b5794;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
