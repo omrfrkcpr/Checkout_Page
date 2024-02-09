@@ -7,7 +7,7 @@
 
   /* colors */
   --cart-bg-color: #f3f1ee;
-  --body-bg-color: #ffffff;
+  --body-bg-color: #efefe7;
   --btn-bg-color: #000000;
   --btn-second-bg-color: #50eda1;
   --paypal-bg-color: #ffd403;
@@ -44,7 +44,7 @@ body {
 }
 
 .nav .left:hover {
-  color: var(--gs-yellow);
+  color: var(--gs-yellow) !important;
   transition-duration: 0.3s;
 }
 
@@ -62,6 +62,15 @@ body {
 /* ---------------------------------- */
 /*                MAIN                */
 /* ---------------------------------- */
+
+.offer {
+  color: var(--gs-yellow);
+  background-color: var(--gs-red);
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.2rem 0 0.2rem 3rem;
+  margin-top: 1rem;
+}
 
 .main {
   display: flex;
@@ -86,4 +95,64 @@ body {
 
 .opacity {
   opacity: 0.6;
+}
+
+.checkout {
+  background-color: var(--body-bg-color);
+  padding: 2rem 1rem 1rem 0;
+  border-radius: 10px;
+  margin-left: 1rem;
+}
+
+.checkout .item {
+  margin-bottom: 1rem;
+}
+
+.checkout img {
+  height: 220px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.checkout .item-info {
+  margin-left: 1rem;
+}
+
+.checkout .prices #price {
+  color: var(--gs-yellow) !important;
+}
+
+.item-count {
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-count .minus,
+.item-count .plus {
+  background-color: lightgray;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+}
+
+.item-remove i:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.summary {
+  padding-left: 2rem;
+}
+
+.summary p {
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+.summary .total {
+  font-size: larger;
+  font-weight: bolder;
 }

@@ -41,7 +41,7 @@
     <!--               nav               -->
     <!-- ------------------------------- -->
     <nav class="nav navbar navbar-expand-lg">
-      <a href="#" class="left"> < CONTINUE SHOPPING</a>
+      <a href="#" class="left text-black"> < CONTINUE SHOPPING</a>
       <div class="header">
         <img src="assets/gs-logo.png" alt="gs-logo" class="gs-logo" />
         <img src="assets/gs-store.png" alt="gs-store" class="gs-store" />
@@ -55,6 +55,8 @@
     <!-- ------------------------------- -->
     <!--              main               -->
     <!-- ------------------------------- -->
+    <p class="offer">Free shipping over 400€</p>
+
     <h2 class="text-center mt-4 fs-1 ms-5">Checkout</h2>
     <main class="main p-4">
       <!-- ------------------------------- -->
@@ -167,105 +169,101 @@
       <!--            checkout             -->
       <!-- ------------------------------- -->
       <div class="checkout d-flex flex-column">
-        <div class="item d-flex">
-          <div class="item-img">
-            <img src="assets/gs.png" alt="gs-jersey" style="height: 100px" />
-          </div>
-          <div class="item-info">
-            <h3 class="item-name">
-              Nike Galatasaray 2023/2024 Professional Jersey FJ6347-836
-            </h3>
-            <p id="price">
-              99€
-              <span id="discount" class="text-decoration-line-through"
-                >120€</span
-              >
-            </p>
-            <div class="item-settings d-flex">
-              <div
-                class="item-count border border-1 border-black p-1 rounded-1"
-              >
-                <span id="minus" class="minus p-1">-</span>
-                <span id="count" class="count">1</span>
-                <span id="plus" class="plus p-1">+</span>
-              </div>
-              <div class="item-remove">
-                <i class="fa fa-trash-can p-2"></i>
-              </div>
+        <ul class="items">
+          <li class="item d-flex">
+            <div class="item-img">
+              <img src="assets/gs.png" alt="gs-jersey" />
             </div>
-            <p class="item-total">
-              Product Total: <span id="item-total">99€</span>
-            </p>
-          </div>
-        </div>
-        <div class="item d-flex">
-          <div class="item-img">
-            <img
-              src="assets/gs-socks.png"
-              alt="gs-socks"
-              style="height: 100px"
-            />
-          </div>
-          <div class="item-info">
-            <h3 class="item-name">
-              Nike Galatasaray Home Football Socks ZE1314-836
-            </h3>
-            <p id="price">
-              9.99€
-              <span id="discount" class="text-decoration-line-through"
-                >15€</span
-              >
-            </p>
-            <div class="item-settings d-flex">
-              <div
-                class="item-count border border-1 border-black p-1 rounded-1"
-              >
-                <span id="minus" class="minus p-1">-</span>
-                <span id="count" class="count">1</span>
-                <span id="plus" class="plus p-1">+</span>
+            <div class="item-info">
+              <h3 class="item-name">
+                Nike Galatasaray 2023/2024 Professional Jersey FJ6347-836
+              </h3>
+              <p class="prices">
+                <span id="price">99€</span>
+                <span id="discount" class="text-decoration-line-through"
+                  >120€</span
+                >
+              </p>
+              <div class="item-settings d-flex">
+                <div
+                  class="item-count border border-1 border-black p-1 rounded-1"
+                >
+                  <button id="minus" class="minus border border-0">-</button>
+                  <span id="count" class="count">1</span>
+                  <button id="plus" class="plus border border-0">+</button>
+                </div>
+                <div class="item-remove">
+                  <i class="fa fa-trash-can text-danger p-2"></i>
+                </div>
               </div>
-              <div class="item-remove">
-                <i class="fa fa-trash-can p-2"></i>
-              </div>
+              <p class="item-total mt-3">
+                Product Total: <span id="item-total">99€</span>
+              </p>
             </div>
-            <p class="item-total">
-              Product Total: <span id="item-total">9.99€</span>
-            </p>
-          </div>
-        </div>
-        <div class="item d-flex">
-          <div class="item-img">
-            <img
-              src="assets/gs-sweatshirt.png"
-              alt="gs-jersey"
-              style="height: 100px"
-            />
-          </div>
-          <div class="item-info">
-            <h3 class="item-name">Nike TS Galatasaray Sweatshirt CW6902-063</h3>
-            <p id="price">
-              54.99€
-              <span id="discount" class="text-decoration-line-through"
-                >75€</span
-              >
-            </p>
-            <div class="item-settings d-flex">
-              <div
-                class="item-count border border-1 border-black p-1 rounded-1"
-              >
-                <span id="minus" class="minus p-1">-</span>
-                <span id="count" class="count">1</span>
-                <span id="plus" class="plus p-1">+</span>
-              </div>
-              <div class="item-remove">
-                <i class="fa fa-trash-can p-2"></i>
-              </div>
+          </li>
+          <li class="item d-flex">
+            <div class="item-img">
+              <img src="assets/gs-socks.png" alt="gs-socks" />
             </div>
-            <p class="item-total">
-              Product Total: <span id="item-total">54.99€</span>
-            </p>
-          </div>
-        </div>
+            <div class="item-info">
+              <h3 class="item-name">
+                Nike Galatasaray Home Football Socks ZE1314-836
+              </h3>
+              <p class="prices">
+                <span id="price">9.99€</span>
+                <span id="discount" class="text-decoration-line-through"
+                  >15€</span
+                >
+              </p>
+              <div class="item-settings d-flex">
+                <div
+                  class="item-count border border-1 border-black p-1 rounded-1"
+                >
+                  <button id="minus" class="minus border border-0">-</button>
+                  <span id="count" class="count">1</span>
+                  <button id="plus" class="plus border border-0">+</button>
+                </div>
+                <div class="item-remove">
+                  <i class="fa fa-trash-can text-danger p-2"></i>
+                </div>
+              </div>
+              <p class="item-total mt-3">
+                Product Total: <span id="item-total">9.99€</span>
+              </p>
+            </div>
+          </li>
+          <li class="item d-flex">
+            <div class="item-img">
+              <img src="assets/gs-sweatshirt.png" alt="gs-jersey" />
+            </div>
+            <div class="item-info">
+              <h3 class="item-name">
+                Nike TS Galatasaray Sweatshirt CW6902-063
+              </h3>
+              <p class="prices">
+                <span id="price">54.99€</span>
+                <span id="discount" class="text-decoration-line-through"
+                  >75€</span
+                >
+              </p>
+              <div class="item-settings d-flex">
+                <div
+                  class="item-count border border-1 border-black p-1 rounded-1"
+                >
+                  <button id="minus" class="minus border border-0">-</button>
+                  <span id="count" class="count">1</span>
+                  <button id="plus" class="plus border border-0">+</button>
+                </div>
+                <div class="item-remove">
+                  <i class="fa fa-trash-can text-danger p-2"></i>
+                </div>
+              </div>
+              <p class="item-total mt-3">
+                Product Total: <span id="item-total">54.99€</span>
+              </p>
+            </div>
+          </li>
+        </ul>
         <div class="summary">
           <p class="sub-total">Subtotal <span id="sub-total">163.98€</span></p>
           <p class="tax">Tax (%18) <span id="tax">29.51€</span></p>
