@@ -159,9 +159,10 @@ input::-webkit-inner-spin-button {
 
 .checkout {
   background-color: var(--body-bg-color);
-  padding: 2rem 1rem 1rem 0;
+  padding: 2rem 2rem 0 0;
   border-radius: 10px;
-  margin-left: 1rem;
+  font-size: 0.8rem;
+  height: 670px;
 }
 
 .checkout .item {
@@ -169,13 +170,17 @@ input::-webkit-inner-spin-button {
 }
 
 .checkout img {
-  height: 220px;
-  width: 200px;
+  height: 80px;
+  width: 75px;
   border-radius: 10px;
 }
 
 .checkout .item-info {
   margin-left: 1rem;
+}
+
+.checkout .item-info .item-name {
+  font-size: 0.8rem;
 }
 
 .checkout .prices #price {
