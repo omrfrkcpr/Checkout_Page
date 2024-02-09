@@ -77,6 +77,10 @@ body {
   justify-content: space-between;
 }
 
+h2 {
+  margin-top: 1.5rem;
+}
+
 /* ---------------------------------- */
 /*                form                */
 /* ---------------------------------- */
@@ -356,6 +360,21 @@ input::-webkit-inner-spin-button {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .checkout {
+    font-size: 1rem !important;
+  }
+
+  .checkout img {
+    height: 150px !important;
+    width: 150px !important;
+  }
+
+  .checkout .item-info .item-name {
+    font-size: 1rem !important;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .right .gs-user {
     height: 60px;
@@ -374,6 +393,23 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (min-width: 1200px) {
+  h2 {
+    margin: 2rem 0 !important;
+  }
+
+  .checkout {
+    font-size: 1rem !important;
+  }
+
+  .checkout img {
+    height: 150px !important;
+    width: 150px !important;
+  }
+
+  .checkout .item-info .item-name {
+    font-size: 1rem !important;
+  }
+
   .right .gs-user {
     height: 60px;
     margin-top: 15px;
@@ -387,10 +423,21 @@ input::-webkit-inner-spin-button {
 
   .main {
     justify-content: center !important;
-    margin-left: 3rem;
   }
 
   .main > .form {
     margin-right: 3rem;
+  }
+
+  .main > .checkout {
+    margin-left: 3rem;
+  }
+
+  .form label {
+    font-size: larger;
+  }
+
+  .form h4 {
+    font-size: 1.5rem;
   }
 }
