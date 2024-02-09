@@ -167,7 +167,7 @@ input::-webkit-inner-spin-button {
   padding: 2rem 2rem 0 0;
   border-radius: 10px;
   font-size: 0.8rem;
-  height: 720px;
+  height: inherit;
   order: 1;
   margin-left: 1rem;
 }
@@ -337,10 +337,6 @@ input::-webkit-inner-spin-button {
     font-size: 0.7rem;
     margin-left: 0.5rem;
   }
-
-  .checkout {
-    height: 700px !important;
-  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -372,10 +368,6 @@ input::-webkit-inner-spin-button {
     margin-top: 0.1rem;
   }
 
-  .main > .checkout {
-    height: 700px;
-  }
-
   .main {
     justify-content: center !important;
   }
@@ -391,10 +383,6 @@ input::-webkit-inner-spin-button {
   .right p {
     font-size: 0.8rem;
     margin-top: 0.1rem;
-  }
-
-  .main > .checkout {
-    height: 700px;
   }
 
   .main {
