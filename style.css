@@ -93,6 +93,10 @@ body {
   margin: 0.5rem 0 0.3rem 0;
 }
 
+.form input {
+  outline: none;
+}
+
 .form .contact {
   margin-bottom: 2rem;
 }
