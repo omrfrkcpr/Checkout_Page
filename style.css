@@ -85,6 +85,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  order: -1;
 }
 
 .contact label,
@@ -162,7 +163,9 @@ input::-webkit-inner-spin-button {
   padding: 2rem 2rem 0 0;
   border-radius: 10px;
   font-size: 0.8rem;
-  height: 670px;
+  height: 720px;
+  order: 1;
+  margin-left: 1rem;
 }
 
 .checkout .item {
@@ -220,4 +223,182 @@ input::-webkit-inner-spin-button {
 .summary .total {
   font-size: larger;
   font-weight: bolder;
+}
+
+/* ---------------------------------- */
+/*            RESPONSIVITY            */
+/* ---------------------------------- */
+
+@media only screen and (max-width: 374px) {
+  body {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .nav {
+    padding: 0 2rem;
+  }
+
+  .nav .left {
+    display: none;
+  }
+
+  .header .gs-logo,
+  .header .gs-store {
+    height: 70px;
+  }
+
+  .right .gs-user {
+    height: 45px;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .right p {
+    font-size: 0.6rem;
+    margin-top: 0.1rem;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .main > .form {
+    margin-top: 2rem;
+  }
+
+  .memory {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .memory label {
+    margin-left: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    padding: 0.5rem 2rem;
+  }
+
+  .nav .left {
+    font-size: 0.7rem;
+  }
+
+  .header .gs-logo,
+  .header .gs-store {
+    height: 80px;
+  }
+
+  .right .gs-user {
+    height: 45px;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .right p {
+    font-size: 0.6rem;
+    margin-top: 0.1rem;
+  }
+
+  .location {
+    display: block !important;
+  }
+
+  .location input,
+  .location label,
+  .location select {
+    margin-top: 0.5rem;
+  }
+
+  .postal-code i {
+    top: 23px;
+  }
+
+  .form input,
+  .form select {
+    height: 30px;
+  }
+
+  .memory {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .memory label {
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+  }
+
+  .checkout {
+    height: 700px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .right .gs-user {
+    height: 60px;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .right p {
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
+  }
+
+  .main {
+    justify-content: center !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .right .gs-user {
+    height: 60px;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .right p {
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
+  }
+
+  .main > .checkout {
+    height: 700px;
+  }
+
+  .main {
+    justify-content: center !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .right .gs-user {
+    height: 60px;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .right p {
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
+  }
+
+  .main > .checkout {
+    height: 700px;
+  }
+
+  .main {
+    justify-content: center !important;
+    margin-left: 3rem;
+  }
+
+  .main > .form {
+    margin-right: 3rem;
+  }
 }
