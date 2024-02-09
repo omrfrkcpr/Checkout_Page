@@ -77,18 +77,59 @@ body {
   justify-content: space-between;
 }
 
-/* Stil input kutusu ve simgesi için */
+/* ---------------------------------- */
+/*                form                */
+/* ---------------------------------- */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.contact label,
+.shipping label {
+  margin: 0.5rem 0 0.3rem 0;
+}
+
+.form .contact {
+  margin-bottom: 2rem;
+}
+
+.contact input,
+.shipping input,
+.form select {
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 40px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form .shipping {
+  margin-bottom: 2rem;
+}
+
+.location .country {
+  margin-right: 1rem;
+}
+
 .input-with-icon {
   position: relative;
-  width: 300px; /* Input kutusunun genişliği */
+  width: 100%;
 }
 .input-with-icon input {
-  padding-left: 30px; /* Simge için boşluk bırak */
+  padding-left: 35px; /* Space for Icons*/
+  padding-right: 10px;
   width: 100%;
 }
 .input-icon {
   position: absolute;
-  left: 10px; /* Simgenin soldan mesafesi */
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -96,6 +137,25 @@ body {
 .opacity {
   opacity: 0.6;
 }
+
+.continue {
+  text-align: right;
+}
+
+.btn-continue {
+  background-color: var(--gs-yellow);
+  color: white;
+  padding: 0.3rem 0.5rem;
+}
+
+.btn-continue:hover {
+  color: var(--gs-red);
+  transition-duration: 0.3s;
+}
+
+/* ---------------------------------- */
+/*              checkout              */
+/* ---------------------------------- */
 
 .checkout {
   background-color: var(--body-bg-color);

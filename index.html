@@ -130,7 +130,7 @@
             <div class="country">
               <label for="country">Country</label><br />
               <select name="country" id="country">
-                <option value="turkey">Turkey</option>
+                <option value="turkey" selected>Turkey</option>
                 <option value="germany">Germany</option>
                 <option value="usa">USA</option>
                 <option value="uk">UK</option>
@@ -153,15 +153,17 @@
               </div>
             </div>
           </div>
+        </div>
 
+        <div class="memory">
           <input type="checkbox" id="checkbox" name="memory" />
-          <label for="checkbox" class="opacity"
+          <label for="checkbox" class="checkbox opacity"
             >See this information next time</label
-          ><br />
+          >
+        </div>
 
-          <button class="continue p-1 rounded-3 border-0 text-white">
-            Continue
-          </button>
+        <div class="continue mt-5">
+          <button class="btn-continue rounded-3 border-0">Continue</button>
         </div>
       </form>
 
