@@ -17,6 +17,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-VSbqDhpf3PpKq4TvPn/iJLBO7O1vXZjR+yzD9kIktr0L2w9+3/G1HBrOOfS+9BtMm6zq5qZxyeYvwoE9W7S+4A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- bootstrap css link -->
     <link
@@ -48,6 +55,225 @@
     <!-- ------------------------------- -->
     <!--              main               -->
     <!-- ------------------------------- -->
+    <h2 class="text-center mt-4 fs-1 ms-5">Checkout</h2>
+    <main class="main p-4">
+      <!-- ------------------------------- -->
+      <!--              form               -->
+      <!-- ------------------------------- -->
+      <form action="" method="post" class="form">
+        <div class="contact">
+          <h4>Contact Information</h4>
+          <label for="email">Email</label><br />
+          <div class="input-with-icon opacity">
+            <i class="fa fa-envelope input-icon"></i>
+            <input
+              type="email"
+              id="emal"
+              name="Email"
+              required
+              placeholder="Enter your email address..."
+            />
+          </div>
+
+          <label for="phone">Phone</label>
+          <div class="input-with-icon opacity">
+            <i class="fa fa-phone input-icon"></i>
+            <input
+              type="number"
+              id="phone"
+              name="Phone"
+              required
+              placeholder="Enter your phone number..."
+            />
+          </div>
+        </div>
+
+        <div class="shipping">
+          <h4>Shipping Address</h4>
+          <label for="fullname">Full name</label>
+          <div class="input-with-icon opacity">
+            <i class="fa fa-user input-icon"></i>
+            <input
+              type="text"
+              id="fullname"
+              name="Fullname"
+              required
+              placeholder="Enter your full name..."
+            />
+          </div>
+          <label for="address">Address</label>
+          <div class="input-with-icon opacity">
+            <i class="fa fa-home input-icon"></i>
+            <input
+              type="text"
+              id="address"
+              name="Address"
+              required
+              placeholder="Enter your address..."
+            />
+          </div>
+          <label for="city">City</label>
+          <div class="input-with-icon opacity">
+            <i class="fa-solid fa-city input-icon"></i>
+            <input
+              type="text"
+              id="city"
+              name="City"
+              required
+              placeholder="Enter your city..."
+            />
+          </div>
+
+          <div class="location d-flex">
+            <div class="country">
+              <label for="country">Country</label><br />
+              <select name="country" id="country">
+                <option value="turkey">Turkey</option>
+                <option value="germany">Germany</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="france">France</option>
+                <option value="poland">Poland</option>
+              </select>
+            </div>
+
+            <div class="postal-code">
+              <label for="post-code">Post Code</label>
+              <div class="input-with-icon opacity">
+                <i class="fa fa-map-signs input-icon"></i>
+                <input
+                  type="number"
+                  id="post-code"
+                  name="Post-code"
+                  required
+                  placeholder="Enter your postal code..."
+                />
+              </div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="checkbox" name="memory" />
+          <label for="checkbox" class="opacity"
+            >See this information next time</label
+          ><br />
+
+          <button class="continue p-1 rounded-3 border-0 text-white">
+            Continue
+          </button>
+        </div>
+      </form>
+
+      <!-- ------------------------------- -->
+      <!--            checkout             -->
+      <!-- ------------------------------- -->
+      <div class="checkout d-flex flex-column">
+        <div class="item d-flex">
+          <div class="item-img">
+            <img src="assets/gs.png" alt="gs-jersey" style="height: 100px" />
+          </div>
+          <div class="item-info">
+            <h3 class="item-name">
+              Nike Galatasaray 2023/2024 Professional Jersey FJ6347-836
+            </h3>
+            <p id="price">
+              99€
+              <span id="discount" class="text-decoration-line-through"
+                >120€</span
+              >
+            </p>
+            <div class="item-settings d-flex">
+              <div
+                class="item-count border border-1 border-black p-1 rounded-1"
+              >
+                <span id="minus" class="minus p-1">-</span>
+                <span id="count" class="count">1</span>
+                <span id="plus" class="plus p-1">+</span>
+              </div>
+              <div class="item-remove">
+                <i class="fa fa-trash-can p-2"></i>
+              </div>
+            </div>
+            <p class="item-total">
+              Product Total: <span id="item-total">99€</span>
+            </p>
+          </div>
+        </div>
+        <div class="item d-flex">
+          <div class="item-img">
+            <img
+              src="assets/gs-socks.png"
+              alt="gs-socks"
+              style="height: 100px"
+            />
+          </div>
+          <div class="item-info">
+            <h3 class="item-name">
+              Nike Galatasaray Home Football Socks ZE1314-836
+            </h3>
+            <p id="price">
+              9.99€
+              <span id="discount" class="text-decoration-line-through"
+                >15€</span
+              >
+            </p>
+            <div class="item-settings d-flex">
+              <div
+                class="item-count border border-1 border-black p-1 rounded-1"
+              >
+                <span id="minus" class="minus p-1">-</span>
+                <span id="count" class="count">1</span>
+                <span id="plus" class="plus p-1">+</span>
+              </div>
+              <div class="item-remove">
+                <i class="fa fa-trash-can p-2"></i>
+              </div>
+            </div>
+            <p class="item-total">
+              Product Total: <span id="item-total">9.99€</span>
+            </p>
+          </div>
+        </div>
+        <div class="item d-flex">
+          <div class="item-img">
+            <img
+              src="assets/gs-sweatshirt.png"
+              alt="gs-jersey"
+              style="height: 100px"
+            />
+          </div>
+          <div class="item-info">
+            <h3 class="item-name">Nike TS Galatasaray Sweatshirt CW6902-063</h3>
+            <p id="price">
+              54.99€
+              <span id="discount" class="text-decoration-line-through"
+                >75€</span
+              >
+            </p>
+            <div class="item-settings d-flex">
+              <div
+                class="item-count border border-1 border-black p-1 rounded-1"
+              >
+                <span id="minus" class="minus p-1">-</span>
+                <span id="count" class="count">1</span>
+                <span id="plus" class="plus p-1">+</span>
+              </div>
+              <div class="item-remove">
+                <i class="fa fa-trash-can p-2"></i>
+              </div>
+            </div>
+            <p class="item-total">
+              Product Total: <span id="item-total">54.99€</span>
+            </p>
+          </div>
+        </div>
+        <div class="summary">
+          <p class="sub-total">Subtotal <span id="sub-total">163.98€</span></p>
+          <p class="tax">Tax (%18) <span id="tax">29.51€</span></p>
+          <p class="shipping">Shipping <span id="shipping">8€</span></p>
+          <p class="total">Total <span id="total">201.49€</span></p>
+        </div>
+      </div>
+    </main>
 
     <!-- ------------------------------- -->
     <!--             footer              -->
