@@ -7,7 +7,7 @@
 
   /* colors */
   --cart-bg-color: #f3f1ee;
-  --body-bg-color: #fff;
+  --body-bg-color: #ffffff;
   --btn-bg-color: #000000;
   --btn-second-bg-color: #50eda1;
   --paypal-bg-color: #ffd403;
@@ -21,4 +21,36 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-ff);
+}
+
+.nav {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 1px 8px black;
+}
+
+.nav .left {
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.nav .left:hover {
+  color: var(--gs-yellow);
+  transition-duration: 0.3s;
+}
+
+.header .gs-logo,
+.header .gs-store {
+  height: 100px;
+}
+
+.right .gs-user {
+  height: 50px;
+  margin-top: 15px;
+  width: 100%;
 }
