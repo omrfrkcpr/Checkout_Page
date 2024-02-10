@@ -17,13 +17,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-VSbqDhpf3PpKq4TvPn/iJLBO7O1vXZjR+yzD9kIktr0L2w9+3/G1HBrOOfS+9BtMm6zq5qZxyeYvwoE9W7S+4A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
     <!-- bootstrap css link -->
     <link
@@ -88,7 +81,7 @@
                   <button id="plus" class="plus border border-0">+</button>
                 </div>
                 <div class="item-remove">
-                  <i class="fa fa-trash-can text-danger p-2"></i>
+                  <i class="remove fa fa-trash-can text-danger p-2"></i>
                 </div>
               </div>
               <p class="item-total mt-3">
@@ -120,7 +113,7 @@
                   <button id="plus" class="plus border border-0">+</button>
                 </div>
                 <div class="item-remove">
-                  <i class="fa fa-trash-can text-danger p-2"></i>
+                  <i class="remove fa fa-trash-can text-danger p-2"></i>
                 </div>
               </div>
               <p class="item-total mt-3">
@@ -152,7 +145,7 @@
                   <button id="plus" class="plus border border-0">+</button>
                 </div>
                 <div class="item-remove">
-                  <i class="fa fa-trash-can text-danger p-2"></i>
+                  <i class="remove fa fa-trash-can text-danger p-2"></i>
                 </div>
               </div>
               <p class="item-total mt-3">
@@ -162,13 +155,15 @@
           </li>
         </ul>
         <div class="summary">
-          <p class="sub-total">Subtotal <span id="sub-total">163.98€</span></p>
-          <p class="tax">Tax (%18) <span id="tax">29.51€</span></p>
+          <p class="sub-total">
+            Subtotal &nbsp;<span id="sub-total">163.98€</span>
+          </p>
+          <p class="tax">Tax (%18) &nbsp;<span id="tax">29.51€</span></p>
           <p class="shipping">
-            <span id="shipping-info">Shipping</span>
+            <span id="shipping-info">Shipping</span>&nbsp;
             <span id="shipping-price">8€</span>
           </p>
-          <p class="total">Total <span id="total">201.49€</span></p>
+          <p class="total">Total &nbsp;<span id="total">201.49€</span></p>
         </div>
       </div>
 
@@ -268,9 +263,9 @@
           </div>
         </div>
 
-        <div class="memory">
+        <div class="memory opacity">
           <input type="checkbox" id="checkbox" name="memory" />
-          <label for="checkbox" class="checkbox opacity"
+          <label for="checkbox" class="checkbox"
             >See this information next time</label
           >
         </div>
