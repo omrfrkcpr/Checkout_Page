@@ -264,7 +264,7 @@ input::-webkit-inner-spin-button {
 
   .header .gs-logo,
   .header .gs-store {
-    height: 75px;
+    height: 60px !important;
   }
 
   .right .gs-user {
