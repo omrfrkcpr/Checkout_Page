@@ -78,7 +78,7 @@ h2 {
 
 .main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 h2 {
@@ -384,10 +384,6 @@ input::-webkit-inner-spin-button {
     margin-top: 0.1rem;
   }
 
-  .main {
-    justify-content: center !important;
-  }
-
   .item-count .minus,
   .item-count .plus {
     padding: 0.2rem 0.3rem;
@@ -457,10 +453,6 @@ input::-webkit-inner-spin-button {
   .right p {
     font-size: 0.8rem;
     margin-top: 0.1rem;
-  }
-
-  .main {
-    justify-content: center !important;
   }
 
   .main > .form {
