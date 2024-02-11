@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let shipping;
     const shippingInfo = document.getElementById("shipping-info");
-    if (subtotal > 400) {
+    if (subtotal > 200) {
       shipping = "0.00";
       // add info into shipping if subtotal over 400€
       shippingInfo.textContent = "Shipping (FREE)";
