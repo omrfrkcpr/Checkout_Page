@@ -253,6 +253,17 @@ input::-webkit-inner-spin-button {
   }
 }
 
+@media only screen and (max-width: 550px) {
+  .right .gs-user,
+  .right p {
+    display: none;
+  }
+
+  .header {
+    margin: auto !important;
+  }
+}
+
 @media only screen and (max-width: 640px) {
   .nav {
     padding: 0 2rem;
