@@ -33,8 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let shipping;
     if (subtotal > 400) {
       shipping = "0.00";
+      // add info into shipping if subtotal over 400€
       document.getElementById("shipping-info").textContent = "Shipping (FREE)";
     } else if (subtotal === 0) {
+      document.getElementById("shipping-info").textContent = "Shipping";
       shipping = "0.00";
       const items = document.querySelector(".items");
       items.textContent = "Your shopping cart is empty";
@@ -43,10 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
       items.style.padding = "0rem";
       items.style.textAlign = "center";
     } else shipping = "8.00";
-
-    // add info into shipping if subtotal over 400€
-    if (shipping === "0.00") {
-    }
 
     const total = (subtotal + parseFloat(vat) + parseFloat(shipping)).toFixed(
       2
