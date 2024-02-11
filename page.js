@@ -31,12 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const vat = (subtotal * 0.19).toFixed(2);
 
     let shipping;
+    const shippingInfo = document.getElementById("shipping-info");
     if (subtotal > 400) {
       shipping = "0.00";
       // add info into shipping if subtotal over 400€
-      document.getElementById("shipping-info").textContent = "Shipping (FREE)";
+      shippingInfo.textContent = "Shipping (FREE)";
     } else if (subtotal === 0) {
-      document.getElementById("shipping-info").textContent = "Shipping";
+      shippingInfo.textContent = "Shipping";
       shipping = "0.00";
       const items = document.querySelector(".items");
       items.textContent = "Your shopping cart is empty";
@@ -44,7 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
       items.style.margin = "0rem 0rem 2rem 2rem";
       items.style.padding = "0rem";
       items.style.textAlign = "center";
-    } else shipping = "8.00";
+    } else {
+      shippingInfo.textContent = "Shipping";
+      shipping = "8.00";
+    }
 
     const total = (subtotal + parseFloat(vat) + parseFloat(shipping)).toFixed(
       2
