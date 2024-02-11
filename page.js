@@ -90,8 +90,10 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       const countSpan = button.parentElement.querySelector(".count");
       let count = parseInt(countSpan.textContent);
-      count++;
-      countSpan.textContent = count;
+      if (count < 10) {
+        count++;
+        countSpan.textContent = count;
+      } else alert("You can order a maximum of 10 of the same product in one purchase.");
       // Update item total and summary
       updateProductTotal(button.closest("li"));
       updateSummary();
