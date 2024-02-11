@@ -15,22 +15,7 @@ Project aims to create a real checkout page of an e-commerce website where we ch
    
 ## Problem Statement
 
-- Create a checkout page following the design and make the calculation of cart dynamically with using of DOM and Event in JS.
-
-
-
-## Project Skeleton 
-
-```
-Checkout_Page (folder)
-|
-|----assets               
-|----index.html               
-|----LICENSE               
-|----page.js               
-|----readme.md                 
-|----style.css                
-```
+- Create a checkout page following the design and make the calculation of cart dynamically with using of DOM and Event in JS
 
 -  User stories;
 
@@ -38,5 +23,27 @@ Checkout_Page (folder)
    - When I click minus button on product's row, I can decrease the product's quantity, but minimum quantity value can be 1.
    - When I click remove button on product's row, I can delete a product in the cart.
    - When I change any combination of product chart(plus, minus, remove etc.), I want to see the new calculation of chart's prices in concerned fields.
+
+## Project Skeleton 
+
+```
+Checkout_Page (folder)
+|
+|----assets
+|----gs-store_checkout_page.gif               
+|----index.html               
+|----LICENSE               
+|----page.js               
+|----readme.md                 
+|----style.css                
+```
+
+## Outcome
+
+![gs-store_checkout_page](https://github.com/omrfrkcpr/GS-Store_Checkout_Page/assets/77440899/e41a8379-adcf-43f8-b5b4-e9990b5a4e94)
+
+
+
+
 
 
