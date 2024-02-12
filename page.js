@@ -41,10 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
       shipping = "0.00";
       const items = document.querySelector(".items");
       items.textContent = "Your shopping cart is empty";
-      items.style.backgroundColor = "lightgreen";
-      items.style.margin = "0rem 0rem 2rem 2rem";
-      items.style.padding = "0rem";
-      items.style.textAlign = "center";
+      items.style.cssText =
+        "background-color:lightgreen; margin:0rem 0rem 2rem 2rem;padding:0rem;text-align:center;";
     } else {
       shippingInfo.textContent = "Shipping";
       shipping = "8.00";
